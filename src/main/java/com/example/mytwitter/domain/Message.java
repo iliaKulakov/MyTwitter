@@ -13,14 +13,14 @@ public class Message {
     @Column
     private String text;
     @Column
-    private String tax;
+    private String tag;
 
     public Message() {
     }
 
-    public Message(String text, String tax) {
+    public Message(String text, String tag) {
         this.text = text;
-        this.tax = tax;
+        this.tag = tag;
     }
 
     public Integer getId() {
@@ -39,11 +39,11 @@ public class Message {
         this.text = text;
     }
 
-    public String getTax() {
-        return tax;
+    public String getTag() {
+        return tag;
     }
 
-    public void setTax(String tax) {
-        this.tax = tax;
+    public void setTag(String tag) {
+        this.tag = tag;
     }
 }
